@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- TAB -->
+    <div class="tab">
+
+        <div class="tab-links">
+            <!-- Contains the tab links -->
+            <button onclick="openTab(event, 'tab1')">Tab1</button>
+            <button onclick="openTab(event, 'tab2')">Tab2</button>
+            <button onclick="openTab(event, 'tab3')">Tab3</button>
+        </div>
+
+        <div class="tab-content" id="tab1">
+            <h4>This is Tab 1</h4>
+            <p>You cliked the first tab</p>
+        </div>
+        <div class="tab-content" id="tab2">
+            <h4>This is Tab 2</h4>
+            <p>You cliked the second tab</p>
+        </div>
+        <div class="tab-content" id="tab3">
+            <h4>This is Tab 3</h4>
+            <p>You cliked the third tab</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

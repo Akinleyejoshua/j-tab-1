@@ -1,0 +1,50 @@
+/* Global Styles */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.tab .tab-links{
+    display: flex;
+    background: linear-gradient(to right, skyblue, slateblue);
+    /* box-shadow: 0 0 5px black; */
+    overflow: auto;
+}
+
+.tab .tab-links button{
+    padding: 1em;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tab .tab-links button:hover{
+    background: rgba(105, 90, 205, 0.2);
+}
+
+.tab .tab-links button.tab-active{
+    background: whitesmoke;
+    color: slateblue;
+}
+
+.tab .tab-content{
+    padding: 1em;
+    display: none;
+}
